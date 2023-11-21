@@ -6,7 +6,7 @@ import Image from './image';
 
 // props object is created by React
 // the keys of the props object match the attributes added into the component when you use it
-// Character component usage: <Component name="Luna" blood="Pure-blood" birthday="Feb 8" quote="Some quote" imgUrl="someurl.com" />
+// Character component usage: <Character name="Luna" blood="Pure-blood" birthday="Feb 8" quote="Some quote" imgUrl="someurl.com" />
 const Character = (props) => {
     console.log(props)
     // React requires you return only one parent element
