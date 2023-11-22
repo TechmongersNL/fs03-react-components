@@ -199,56 +199,6 @@
             "born": "Between 1 September 1972 and 31 August 1973",
             "quote": "Don't call me Nymphadora, Remus. It's Tonks.",
             "imgUrl": "https://pbs.twimg.com/profile_images/2690708404/9b19e1b333515dd7c32a439b65b2a76f_400x400.png"
-        },
-        {
-            "id": 21,
-            "name": "Remus Lupin",
-            "blood": "Half-blood",
-            "species": "Werewolf",
-            "patronus": "Wolf",
-            "born": "10 March, 1960",
-            "quote": "I was a very small boy when I received the bite. My parents tried everything, but in those days there was no cure.",
-            "imgUrl": "https://upload.wikimedia.org/wikipedia/en/2/2f/Remus_Lupin.jpeg"
-        },
-        {
-            "id": 22,
-            "name": "Sirius Black",
-            "blood": "Pure-Blood",
-            "species": "Human (Animagus)",
-            "patronus": "Non-corporeal",
-            "born": "3 November, 1959",
-            "quote": "If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.",
-            "imgUrl": "https://th.bing.com/th/id/OIP.CWzjEBgIf5d0gmSZY-t1xwAAAA?rs=1&pid=ImgDetMain"
-        },
-        {
-            "id": 23,
-            "name": "Minerva McGonagall",
-            "blood": "Half-blood",
-            "species": "Human (Animagus)",
-            "patronus": "Cat",
-            "born": "4 October",
-            "quote": "Transfiguration is some of the most complex and dangerous magic you will learn at Hogwarts. Anyone messing around in my class will leave and not come back. You have been warned",
-            "imgUrl": "http://www.nallon.com/wp-content/uploads/2014/06/2005_harry_potter_and_the_goblet_of_fire_maggie_smith_wallpaper-t2.jpg"
-        },
-        {
-            "id": 24,
-            "name": "Draco Malfoy",
-            "blood": "Pure-Blood",
-            "species": "Human",
-            "patronus": "None",
-            "born": "5 June, 1980",
-            "quote": "Red hair, and a hand-me-down robe... You must be a Weasley!",
-            "imgUrl": "https://images0.persgroep.net/rcs/gZMKNCuXjrS33gF8i04c8Lo778Y/diocontent/130867633/_fitwidth/694/?appId=21791a8992982cd8da851550a453bd7f&quality=0.8"
-        },
-        {
-            "id": 25,
-            "name": "Nascissa Malfoy (née Black)",
-            "blood": "Pure-Blood",
-            "species": "Human",
-            "patronus": "Non-corporeal",
-            "born": "1955",
-            "quote": "He is dead!",
-            "imgUrl": "https://vignette.wikia.nocookie.net/harrypotter/images/2/26/NarcissaMalfoy.jpg/revision/latest/scale-to-width-down/350?cb=20160913142650&path-prefix=it"
         }
     ]
 }
