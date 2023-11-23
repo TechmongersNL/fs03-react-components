@@ -24,9 +24,10 @@ function App() {
         { /* The result of map is another array with new data */}
         { /* In our case, this new data is a Character component */}
         {
-          charactersData.map((character) => {
+          charactersData.map((character, index) => {
             return (
               <Character 
+                key={index}
                 name={character.name} 
                 birthday={character.born} 
                 blood={character.blood} 
