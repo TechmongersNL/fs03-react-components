@@ -1,5 +1,6 @@
 // You can import other components and use them too!
 import Image from './image';
+import LikeCounter from './like-counter';
 
 // A React component is just a function that returns some JSX
 // Specifically, it returns some JSX with only one parent element
@@ -8,7 +9,7 @@ import Image from './image';
 // the keys of the props object match the attributes added into the component when you use it
 // Character component usage: <Character name="Luna" blood="Pure-blood" birthday="Feb 8" quote="Some quote" imgUrl="someurl.com" />
 const Character = (props) => {
-    console.log(props)
+    //console.log(props)
     // React requires you return only one parent element
     // You can use a React Fragment (an empty html element) to fix this issue
     return (
@@ -21,6 +22,7 @@ const Character = (props) => {
             <h2>Quote</h2>
             <p>{props.quote}</p>
             <Image url={props.imgUrl} />
+            <LikeCounter />
             <hr />
         </>
     )

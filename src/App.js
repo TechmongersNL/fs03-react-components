@@ -1,6 +1,7 @@
 import './App.css';
 import Character from './components/character';
 import charactersData from './charactersData';
+import CharacterList from './components/character-list';
 // import something from 'some place'
 
 // Creating a new function component in the same file
@@ -23,23 +24,8 @@ function App() {
         { /* The below array iterator (map), loops over every element in the charactersData array */}
         { /* The result of map is another array with new data */}
         { /* In our case, this new data is a Character component */}
-        {
-          charactersData.map((character) => {
-            return (
-              <Character 
-                name={character.name} 
-                birthday={character.born} 
-                blood={character.blood} 
-                imgUrl={character.imgUrl}
-                quote={character.quote}
-              />
-            )
-          })
-        }
+        <CharacterList />
         { /* Using array iterator (map) instead of repeating like below: */ }
-        <Character name={charactersData[0].name} birthday={charactersData[0].born} blood={charactersData[0].blood} imgUrl={charactersData[0].imgUrl} quote={charactersData[0].quote} />
-        <Character name={charactersData[1].name} birthday={charactersData[1].born} blood={charactersData[1].blood} imgUrl={charactersData[1].imgUrl} quote={charactersData[1].quote} />
-        <Character name={charactersData[2].name} birthday={charactersData[2].born} blood={charactersData[2].blood} imgUrl={charactersData[2].imgUrl} quote={charactersData[2].quote} />
       </div>
   );
 }
