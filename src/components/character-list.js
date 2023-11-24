@@ -27,18 +27,39 @@ const CharacterList = () => {
         getCharacters();
     }, []);
 
-    const increaseLikes = () => {
+    const increaseLikes = (id) => {
         // when this function is called, I want to increase the amount of likes on that character
         // in order to update a character, I need to use setCharacters
-        setCharacters(characters);
-        console.log('increase likes was clicked')
+
+        // to update the character: first we need to find the character that we want to update
+        // then make a copy of that character, and increase the amount of likes in it
+        // add that updatedCharacter back into our updatedArray
+        // setCharacter(updatedArray)
+        const characterToUpdate = characters.find((character) => {
+            return character.id === id
+        })
+        console.log(characterToUpdate);
+        const updatedCharacter = {...characterToUpdate, likes: characterToUpdate.likes + 1}
+        console.log(updatedCharacter)
+        const updatedArray = characters.map((character) => {
+            if (character.id === id) {
+                return updatedCharacter;
+            } else {
+                return character;
+            }
+        })
+        console.log(characters, 'characters before update')
+        console.log(updatedArray, 'characters after update');
+
+        setCharacters(updatedArray);
+        console.log('increase likes was clicked with id: ' + id)
     }
 
     const getCharactersComponents = () => {
-        return characters.map((character, index) => {
+        return characters.map((character) => {
             return (
             <Character 
-                key={index}
+                key={character.id}
                 name={character.name} 
                 birthday={character.born} 
                 blood={character.blood} 
@@ -46,6 +67,7 @@ const CharacterList = () => {
                 quote={character.quote}
                 likes={character.likes}
                 increaseLikes={increaseLikes}
+                id={character.id}
             />
             )
         })
