@@ -10,7 +10,12 @@ const CharacterList = () => {
     const getCharacters = async () => {
         const response = await axios.get('https://my-json-server.typicode.com/TechmongersNL/fs03-react/characters');
         console.log(response.data);
-        setCharacters(response.data);
+
+        const charactersWithLikes = response.data.map((character) => {
+            return {...character, likes: 0}
+        })
+        console.log(charactersWithLikes, 'character with likes')
+        setCharacters(charactersWithLikes);
     }
 
     // If you don't put getCharacters in a useEffect hook, getCharacters will be called (and will make an Axios request) every time CharactersList gets re-rendered
@@ -22,6 +27,13 @@ const CharacterList = () => {
         getCharacters();
     }, []);
 
+    const increaseLikes = () => {
+        // when this function is called, I want to increase the amount of likes on that character
+        // in order to update a character, I need to use setCharacters
+        setCharacters(characters);
+        console.log('increase likes was clicked')
+    }
+
     const getCharactersComponents = () => {
         return characters.map((character, index) => {
             return (
@@ -32,16 +44,32 @@ const CharacterList = () => {
                 blood={character.blood} 
                 imgUrl={character.imgUrl}
                 quote={character.quote}
+                likes={character.likes}
+                increaseLikes={increaseLikes}
             />
             )
         })
+    }
+
+    //const totalLikes = 0;
+    const calculateTotalLikes = () => {
+        let likesSum = 0;
+        characters.forEach((character) => {
+            likesSum = likesSum + character.likes;
+        })
+        return likesSum;
     }
 
     return (
         // if characters data is not null (the initial value of the characters state variable)
         // then I want to show Characters components
         // else I want to show "loading..."
-        characters ? getCharactersComponents() : 'Loading...'
+        <>
+            <h4>Total number of likes: {characters ? calculateTotalLikes() : 'Loading...'}</h4>
+            <div>
+                {characters ? getCharactersComponents() : 'Loading...'}
+            </div>
+        </>
     )
 }
 

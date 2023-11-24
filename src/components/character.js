@@ -22,7 +22,7 @@ const Character = (props) => {
             <h2>Quote</h2>
             <p>{props.quote}</p>
             <Image url={props.imgUrl} />
-            <LikeCounter />
+            <LikeCounter likes={props.likes} increaseLikes={props.increaseLikes} />
             <hr />
         </>
     )

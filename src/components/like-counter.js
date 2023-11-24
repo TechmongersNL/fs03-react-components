@@ -1,8 +1,10 @@
 import {useState} from 'react';
 import '../styles/like-counter.css';
 
-const LikeCounter = () => {
-    const [count, setCount] = useState(0);
+const LikeCounter = (props) => {
+    //const [count, setCount] = useState(0);
+    const count = props.likes;
+    const setCount = props.increaseLikes;
     const [favorite, setFavorite] = useState(false);
 
     const whenIncreaseButtonClicked = () => {
