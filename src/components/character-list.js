@@ -35,15 +35,9 @@ const CharacterList = () => {
         // then make a copy of that character, and increase the amount of likes in it
         // add that updatedCharacter back into our updatedArray
         // setCharacter(updatedArray)
-        const characterToUpdate = characters.find((character) => {
-            return character.id === id
-        })
-        console.log(characterToUpdate);
-        const updatedCharacter = {...characterToUpdate, likes: characterToUpdate.likes + 1}
-        console.log(updatedCharacter)
         const updatedArray = characters.map((character) => {
             if (character.id === id) {
-                return updatedCharacter;
+                return {...character, likes: character.likes + 1};
             } else {
                 return character;
             }
