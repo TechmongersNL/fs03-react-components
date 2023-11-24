@@ -22,6 +22,7 @@ const Character = (props) => {
             <h2>Quote</h2>
             <p>{props.quote}</p>
             <Image url={props.imgUrl} />
+            {/* Passing props from CharacterList even further down into LikeCounter */}
             <LikeCounter likes={props.likes} increaseLikes={props.increaseLikes} id={props.id} />
             <hr />
         </>

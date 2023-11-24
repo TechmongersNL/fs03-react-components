@@ -42,11 +42,11 @@ const CharacterList = () => {
                 return character;
             }
         })
-        console.log(characters, 'characters before update')
-        console.log(updatedArray, 'characters after update');
+        // console.log(characters, 'characters before update')
+        // console.log(updatedArray, 'characters after update');
 
         setCharacters(updatedArray);
-        console.log('increase likes was clicked with id: ' + id)
+        // console.log('increase likes was clicked with id: ' + id)
     }
 
     const getCharactersComponents = () => {
@@ -67,7 +67,6 @@ const CharacterList = () => {
         })
     }
 
-    //const totalLikes = 0;
     const calculateTotalLikes = () => {
         let likesSum = 0;
         characters.forEach((character) => {
