@@ -19,4 +19,4 @@ You can see the changes from day to day in the ["Pull Requests"](https://github.
 ## How to use this repo as a practice assessment
 Read the [practice assessment instructions here](./AssessmentPractice.md)
 
-The results of completing the required parts of the practice assessment should be equivalent to the code on the `react-routing` branch in this repo
+The results of completing the required parts of the practice assessment should be equivalent to the code on the `react-router` branch in this repo
