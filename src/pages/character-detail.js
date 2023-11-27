@@ -21,9 +21,20 @@ const CharacterDetail = () => {
     }, [])
 
     return (
-        <div>
-            {details ? details.name : 'Loading...'}
-        </div>
+        details ? 
+            <>
+                <h1>{details.name}</h1>
+                <h2>Blood type</h2>
+                <p>{details.blood}</p>
+                <h2>Birthday</h2>
+                <p>{details.born}</p>
+                <h2>Patronus</h2>
+                <p>{details.patronus}</p>
+                <h2>Quote</h2>
+                <p>{details.quote}</p>
+                <img src={details.imgUrl} alt={details.name} />
+            </> :
+            'Loading...'
     )
 }
 
