@@ -1,4 +1,4 @@
-# 👨‍⚕️👩‍⚕️ React Assessment Practice
+# 🧙‍♂️ React Assessment Practice
 
 (This is a markdown .MD file, if you are reading this in VSCode, right click the file and select `Open Preview`)
 
