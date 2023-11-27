@@ -1,6 +1,7 @@
 // You can import other components and use them too!
 import Image from './image';
 import LikeCounter from './like-counter';
+import {Link} from 'react-router-dom';
 
 // A React component is just a function that returns some JSX
 // Specifically, it returns some JSX with only one parent element
@@ -24,6 +25,7 @@ const Character = (props) => {
             <Image url={props.imgUrl} />
             {/* Passing props from CharacterList even further down into LikeCounter */}
             <LikeCounter likes={props.likes} increaseLikes={props.increaseLikes} id={props.id} />
+            <Link to={`/characters/${props.id}`} >Go to character detail page of character with id {props.id}</Link>
             <hr />
         </>
     )

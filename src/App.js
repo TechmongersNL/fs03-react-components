@@ -2,6 +2,10 @@ import './App.css';
 import Character from './components/character';
 import charactersData from './charactersData';
 import CharacterList from './components/character-list';
+import {Routes, Route} from 'react-router-dom';
+import HomePage from './pages/home-page';
+import CharacterOverview from './pages/character-overview';
+import CharacterDetail from './pages/character-detail';
 // import something from 'some place'
 
 // Creating a new function component in the same file
@@ -21,10 +25,17 @@ const AppNumberTwo = () => {
 function App() {
   return (
     <div className="App">
+        <h1>Here is my header</h1>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/characters' element={<CharacterOverview />} />
+          <Route path='/characters/:id' element={<CharacterDetail />} />
+        </Routes>
         { /* The below array iterator (map), loops over every element in the charactersData array */}
         { /* The result of map is another array with new data */}
         { /* In our case, this new data is a Character component */}
-        <CharacterList />
+        <h1>Here is my footer</h1>
+
         { /* Using array iterator (map) instead of repeating like below: */ }
       </div>
   );
