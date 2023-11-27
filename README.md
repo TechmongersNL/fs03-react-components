@@ -13,3 +13,7 @@ Check out the different branches to see how this repo evolved over a week of Rea
 - React state with useState & useEffect
 - React lifting state
 - React routing
+
+## How to use this repo as a practice assessment
+Read the practice assessment instructions [here](./AssessmentPractice.md)
+The results of completing the required parts of the practice assessment should be equivalent to the code on the `react-routing` branch in this repo
