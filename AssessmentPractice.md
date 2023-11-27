@@ -2,7 +2,7 @@
 
 (This is a markdown .MD file, if you are reading this in VSCode, right click the file and select `Open Preview`)
 
-#### Rules for this challenge
+#### Rules for the real assessment
 
 - You are allowed to consult Kyna, previous exercises and search on the internet
 - You are not allowed to ask your colleagues for help
@@ -27,7 +27,7 @@ This challenge is graded in red, yellow or green. Meaning of each grade:
 
 #### Results feedback
 
-Correcting this assessments takes time. Please be patient with regards to getting the results of your assessments. Results are planned to go out the following week between Monday and Tuesday.
+Correcting these assessments takes time. Please be patient with regards to getting the results of your assessments. Results are planned to go out the following week between Monday and Tuesday.
 
 #### How to make and submit your assessment
 
