@@ -55,7 +55,7 @@ Correcting these assessments takes time. Please be patient with regards to getti
 
 ## Learning goals & some tips
 
-For transparency and clarity, these are the learning goals we will be testing:
+For transparency and clarity, these are the main learning goals we will be testing:
 - Creating components
 - Nesting components and passing them data via props
 - Using event listeners and event handlers, like onClick
@@ -67,6 +67,7 @@ For transparency and clarity, these are the learning goals we will be testing:
 Additional learning goals include:
 - Creating input forms and console logging the results
 - Mapping, filtering, finding & sorting arrays of objects
+- CSS styling
 - Basic git and GitHub usage: making commits, adding remote & pushing to master
 
 If this sounds like a large list, it is, and it's because you've learned a tremendous amount of things these past week! Don't let it scare or overwhelm you though, you have seen all these things. See the rules above for resources you are allowed to use
