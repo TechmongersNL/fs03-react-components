@@ -8,13 +8,18 @@ const CharacterList = () => {
     const [characters, setCharacters] = useState(null);
 
     const getCharacters = async () => {
+        // Get the characters data from the API
         const response = await axios.get('https://my-json-server.typicode.com/TechmongersNL/fs03-react/characters');
         console.log(response.data);
 
+        // We want to keep track of the number of "likes" for each character in our state now too
+        // Add our own "likes" key into each character object
         const charactersWithLikes = response.data.map((character) => {
             return {...character, likes: 0}
         })
         console.log(charactersWithLikes, 'character with likes')
+
+        // Each character, now with data from the API and our own "likes" data, is saved into the local React state
         setCharacters(charactersWithLikes);
     }
 
